@@ -5,10 +5,7 @@ import App from './App';
 import Admin from './admin';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Admin />
-  </React.StrictMode>,
+ReactDOM.render(<Admin />,
   document.getElementById('root')
 );
 
