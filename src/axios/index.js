@@ -5,7 +5,10 @@ export default class Axios{
       Jsonp(opt.url,{
         param:'callback'
       },(err,res)=>{
-        if(res.status == 'success'){
+        console.log(res);
+        // resolve(res)
+        // reject(res)
+        if(!!res.status&&res.status == 'success'){
           resolve(res)
         }else{
           reject(res.status)
